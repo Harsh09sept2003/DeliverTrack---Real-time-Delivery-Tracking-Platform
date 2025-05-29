@@ -53,8 +53,8 @@ DeliverTrack aims to provide a comprehensive solution for real-time delivery tra
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/delivertrack.git
-cd delivertrack
+git clone https://github.com/Harsh09sept2003/DeliverTrack---Real-time-Delivery-Tracking-Platform.git
+cd DeliverTrack---Real-time-Delivery-Tracking-Platform
 ```
 
 2. Install dependencies:
