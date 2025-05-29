@@ -149,11 +149,15 @@ delivertrack/
 - [x] Code documentation
 - [x] Type safety
 
+## License
+
+MIT License - see LICENSE.md for details
+
 ## Author
 
-Created by [Harsh Kumar]
-- GitHub: [@Harsh09sept2003](https://github.com/Harsh09sept2003)
-- LinkedIn: [harsh-kumar-30243b264](https://www.linkedin.com/in/harsh-kumar-30243b264/)
+Created by [Your Name]
+- GitHub: [@yourusername](https://github.com/yourusername)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourusername)
 
 ## Acknowledgments
 
