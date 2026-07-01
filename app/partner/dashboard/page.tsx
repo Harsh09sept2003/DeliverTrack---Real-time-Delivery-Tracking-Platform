@@ -40,10 +40,10 @@ export default function PartnerDashboard() {
   
   const getStatusSteps = () => {
     const steps = [
-      { id: "assigned", label: "Assigned", icon: <Package /> },
-      { id: "pickup", label: "Pickup", icon: <MapPin /> },
-      { id: "in_transit", label: "In Transit", icon: <Navigation /> },
-      { id: "delivered", label: "Delivered", icon: <CheckCircle /> },
+      { id: "assigned", label: "Assigned", icon: <Package />, status: "upcoming" },
+      { id: "pickup", label: "Pickup", icon: <MapPin />, status: "upcoming" },
+      { id: "in_transit", label: "In Transit", icon: <Navigation />, status: "upcoming" },
+      { id: "delivered", label: "Delivered", icon: <CheckCircle />, status: "upcoming" },
     ];
     
     if (!currentOrder) return steps;
