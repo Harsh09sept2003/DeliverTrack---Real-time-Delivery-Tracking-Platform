@@ -34,3 +34,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# .gitignore - Add these lines
+.env
+.env.local
+.env.*.local
+.env.production.local
+node_modules/
+.next/
+out/
+.DS_Store
