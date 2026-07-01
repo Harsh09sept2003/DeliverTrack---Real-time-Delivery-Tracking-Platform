@@ -146,6 +146,7 @@ export function DashboardLayout({ children, role, userName = "User" }: Dashboard
   };
 
   return (
+    <Sheet open={open} onOpenChange={setOpen}>
     <div className="flex min-h-screen bg-background">
       {/* Sidebar for desktop */}
       <aside className="hidden lg:flex w-72 flex-col fixed left-0 top-0 bottom-0 border-r bg-card z-30">
@@ -190,15 +191,7 @@ export function DashboardLayout({ children, role, userName = "User" }: Dashboard
       </aside>
       
       {/* Mobile navigation */}
-      <Sheet open={open} onOpenChange={setOpen}>
-        <SheetTrigger asChild>
-          <Button variant="ghost" size="icon" className="lg:hidden">
-            <Menu className="h-6 w-6" />
-            <span className="sr-only">Toggle menu</span>
-          </Button>
-        </SheetTrigger>
-        
-        <SheetContent side="left" className="w-72 p-0">
+      <SheetContent side="left" className="w-72 p-0">
           <div className="flex h-16 items-center gap-2 px-6 border-b">
             <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
               <div className="bg-primary/10 p-2 rounded-lg">
@@ -238,8 +231,7 @@ export function DashboardLayout({ children, role, userName = "User" }: Dashboard
               </Button>
             </div>
           </div>
-        </SheetContent>
-      </Sheet>
+      </SheetContent>
       
       {/* Main content */}
       <div className="flex-1 min-h-screen lg:ml-72">
@@ -290,5 +282,6 @@ export function DashboardLayout({ children, role, userName = "User" }: Dashboard
         <main className="p-6">{children}</main>
       </div>
     </div>
+    </Sheet>
   );
 }
