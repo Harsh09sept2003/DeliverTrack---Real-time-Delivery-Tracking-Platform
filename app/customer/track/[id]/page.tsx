@@ -87,7 +87,7 @@ export default function TrackOrderPage() {
   
   if (!order) {
     return (
-      <DashboardLayout role="customer\" userName="James Wilson">
+      <DashboardLayout role="customer" userName="James Wilson">
         <div className="flex items-center justify-center h-[calc(100vh-16rem)]">
           <div className="text-center">
             <h2 className="text-xl font-bold mb-2">Order Not Found</h2>
