@@ -8,10 +8,11 @@ import { Switch } from "@/components/ui/switch";
 import { MapPin, Navigation, AlertTriangle, RefreshCw } from "lucide-react";
 import { Location } from "@/lib/types";
 import { mockOrders } from "@/lib/mock-data";
-import dynamic from "next/dynamic";
+
+import dynamicImport from "next/dynamic";
 
 // Dynamically import map component to prevent SSR issues
-const LocationUpdaterMap = dynamic(() => import("@/components/location-updater-map"), {
+const LocationUpdaterMap = dynamicImport(() => import("@/components/location-updater-map"), {
   ssr: false,
   loading: () => (
     <div className="w-full h-[400px] bg-muted flex items-center justify-center">
