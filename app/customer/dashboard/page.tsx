@@ -55,7 +55,7 @@ export default function CustomerDashboard() {
       case "cancelled":
         return "Cancelled";
       default:
-        return status.replace("_", " ");
+        return String(status).replace("_", " ");
     }
   };
   
